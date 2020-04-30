@@ -1,3 +1,5 @@
+![Relation Document Bridge](https://github.com/sachin/relation_document_bridge/workflows/Relation%20Document%20Bridge/badge.svg)
+
 # RelationDocumentBridge
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/relation_document_bridge`. To experiment with that code, run `bin/console` for an interactive prompt.
