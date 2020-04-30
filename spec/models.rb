@@ -1,5 +1,10 @@
 # Active Record models
-class Article < ActiveRecord
+
+class ApplicationRecord < ActiveRecord::Base
+  self.abstract_class = true
+end
+
+class Article < ApplicationRecord
 
 end
 
