@@ -3,8 +3,8 @@ require_relative 'lib/relation_document_bridge/version'
 Gem::Specification.new do |spec|
   spec.name          = "relation_document_bridge"
   spec.version       = RelationDocumentBridge::VERSION
-  spec.authors       = ["Sachin Choudhary"]
-  spec.email         = ["sachin.choudhary@punchh.com"]
+  spec.authors       = ["Sachin Choudhary", "Vikas Verma", "Anshul Sharma", "Uday Gupta"]
+  spec.email         = ["sachin238@gmail.com", "vikasvr23@gmail.com", "anshulksharma12@gmail.com", "udaygupta708@gmail.com"]
 
   spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
   spec.description   = %q{TODO: Write a longer description or delete this line.}
