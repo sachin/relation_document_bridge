@@ -34,5 +34,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec',          '~> 3.0'
   spec.add_development_dependency 'byebug'
   spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'sqlite3'
+  spec.add_development_dependency 'activerecord'
+  spec.add_development_dependency 'mongoid'
+
   # Runtime dependencies
+
 end
