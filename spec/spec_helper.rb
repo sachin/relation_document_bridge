@@ -5,6 +5,7 @@ require "relation_document_bridge"
 require "active_record_configuration"
 require "mongoid_configuration"
 require "byebug"
+require "factory_bot"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -15,5 +16,12 @@ RSpec.configure do |config|
 
   config.expect_with :rspec do |c|
     c.syntax = :expect
+  end
+
+  # Factory bot configurations
+  config.include FactoryBot::Syntax::Methods
+
+  config.before(:suite) do
+    FactoryBot.find_definitions
   end
 end
