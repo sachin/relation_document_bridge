@@ -1,4 +1,4 @@
-# Active Record models
+# Active Record models =======================================
 
 class ApplicationRecord < ActiveRecord::Base
   self.abstract_class = true
@@ -29,6 +29,27 @@ class Comment < ApplicationRecord
   belongs_to :article, inverse_of: :comments
 end
 
+# MongoId Models ===========================
 
+require 'mongoid'
+class Magazine
+  include Mongoid::Document
 
-# MongoId models
+  # schema
+  field :name,              type: String
+
+  # relationships
+  has_many :posts, inverse_of: :magazine, dependent: :destroy
+end
+
+class Post
+  include Mongoid::Document
+
+  # schema
+  field :title,             type: String
+  field :magazine_id,       type: Integer
+
+  # relationships
+  belongs_to :magazine, inverse_of: :posts
+end
+

@@ -36,4 +36,23 @@ FactoryBot.define do
     article
     association :commenter, factory: :user
   end
+
+  factory :magazine do
+    name { "Magazine name" }
+
+    factory :magazine_with_posts do
+      transient do
+        posts_count { 5 }
+      end
+
+      after(:create) do |magazine, evaluator|
+        create_list(:post, evaluator.posts_count, magazine: magazine)
+      end
+    end
+  end
+
+  factory :post do
+    title { "Post title"}
+    magazine
+  end
 end

@@ -4,6 +4,7 @@ RSpec.describe RelationDocumentBridge do
   end
 
   it "does something useful" do
+    byebug
     expect(false).to eq(true)
   end
 end
