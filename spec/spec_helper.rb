@@ -4,6 +4,7 @@ require "bundler/setup"
 require "relation_document_bridge"
 require "active_record_configuration"
 require "byebug"
+require "factory_bot"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
