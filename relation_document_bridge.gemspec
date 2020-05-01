@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Sachin Choudhary", "Vikas Verma", "Anshul Sharma", "Uday Gupta"]
   spec.email         = ["sachin238@gmail.com", "vikasvr23@gmail.com", "anshulksharma12@gmail.com", "udaygupta708@gmail.com"]
 
-  spec.summary       = %q{Bridge between ActiveRecord and MongoId}
+  spec.summary       = %q{Bridge between ActiveRecord(relational) and MongoId(document)}
   spec.description   = %q{Bridge between ActiveRecord and MongoId}
   spec.homepage      = "https://github.com/sachin/relation_document_bridge"
   spec.license       = "MIT"

@@ -1,6 +1,5 @@
 require 'active_record'
 require 'yaml'
-require 'byebug'
 
 base_path = File.dirname(__FILE__)
 
