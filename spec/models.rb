@@ -1,4 +1,5 @@
-# Active Record models =======================================
+# Active Record models
+require 'mongoid'
 
 class ApplicationRecord < ActiveRecord::Base
   self.abstract_class = true
@@ -52,4 +53,3 @@ class Post
   # relationships
   belongs_to :magazine, inverse_of: :posts
 end
-

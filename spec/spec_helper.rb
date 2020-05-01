@@ -3,6 +3,7 @@ SimpleCov.start
 require "bundler/setup"
 require "relation_document_bridge"
 require "active_record_configuration"
+require "mongoid_configuration"
 require "byebug"
 require "factory_bot"
 
